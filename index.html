@@ -31,7 +31,8 @@
                 </div>
                 <div>
                     <label for="pw">Password</label>
-                    <input id="pw" type="password" required minlength="8" autocomplete="off">
+                    <p>Must be 8 characters, and contain one uppercase, one lowercase and one number</p>
+                    <input id="pw" type="password" required minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" autocomplete="off">
                 </div>
                 <div>
                     <input type="submit" value="sign up">
